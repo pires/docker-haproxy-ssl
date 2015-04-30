@@ -12,7 +12,7 @@ Lean (9MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
 ## Run
 
 ```
-docker run -P -v /Users/pires/Work/Projects/docker-haproxy-ssl/certs:/etc/haproxy/certs pires/docker-haproxy-ssl
+docker run -dPv /path/to/your/haproxy.pem:/etc/haproxy/certs/haproxy.pem pires/docker-haproxy-ssl
 ```
 
 ## Build images (optional)
