@@ -1,5 +1,5 @@
 # docker-haproxy-ssl
-Lean (9MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
+Lean (8MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
 
 ## Current software
 
