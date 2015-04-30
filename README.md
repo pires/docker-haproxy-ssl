@@ -9,6 +9,12 @@ Lean (9MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
 
 * Docker 1.5.0+ (tested with boot2docker)
 
+## Run
+
+```
+docker run -P -v /Users/pires/Work/Projects/docker-haproxy-ssl/certs:/etc/haproxy/certs pires/docker-haproxy-ssl
+```
+
 ## Build images (optional)
 
 Providing your own version of [the image automatically built for Logstash](https://registry.hub.docker.com/u/pires/docker-haproxy-ssl) will not be supported. This is an *optional* step. You have been warned.
