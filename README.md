@@ -1,6 +1,8 @@
 # docker-haproxy-ssl
 Lean (8MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
 
+[![Docker Repository on Quay.io](https://quay.io/repository/pires/docker-haproxy-ssl/status "Docker Repository on Quay.io")](https://quay.io/repository/pires/docker-haproxy-ssl)
+
 ## Current software
 
 * HAProxy 1.5.11-patch02
@@ -12,15 +14,5 @@ Lean (8MB) HAProxy + SSL termination Docker image, based on `progrium/busybox`.
 ## Run
 
 ```
-docker run -d -p 80:80 -p 443:443 -v /path/to/your:/etc/haproxy/certs pires/docker-haproxy-ssl
-```
-
-## Build images (optional)
-
-Providing your own version of [the image automatically built for Logstash](https://registry.hub.docker.com/u/pires/docker-haproxy-ssl) will not be supported. This is an *optional* step. You have been warned.
-
-```
-git clone https://github.com/pires/docker-haproxy-ssl.git
-cd docker-haproxy-ssl
-docker build -t pires/docker-haproxy-ssl .
+docker run -d -p 80:80 -p 443:443 -v /path/to/your:/etc/haproxy/certs quay.io/pires/docker-haproxy-ssl:latest
 ```
